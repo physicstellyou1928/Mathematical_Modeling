@@ -59,7 +59,7 @@ def main():
         possible_j=[]
 
         for i in range(cols):
-            if not possible_point[0,i]<=38 or possible_point[1,i]>3 :
+            if not possible_point[0,i]<38 or possible_point[1,i]>3 :
         # remove the point in if from the x,y of the possible point
                            possible_i.append(possible_point[0,i])
                            possible_j.append(possible_point[1,i])
@@ -72,10 +72,14 @@ def main():
         plot=plt.scatter(x, y,s=1)
 
         #asis equal
-
         plt.gca().set_aspect(1)
+        
+        
+        
+        [rows,cols]=possible_point.shape
+        point_num=cols
 
-        return plot , possible_point
+        return plot , possible_point,point_num
     import numpy as np
     print(generate_point_and_plot(x_p=51 ,y_p=51 ,angle=1/6*np.pi))
 if __name__=='__main__':
