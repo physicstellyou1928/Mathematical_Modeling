@@ -28,8 +28,8 @@ def main():
         #logical algorithm
                 if 400<a[i,j]<2500:
                     #print(i,j)
-                    possible_i.append(i)
-                    possible_j.append(j)
+                    possible_i.append((50/(x_p-1))*i)
+                    possible_j.append((50/(y_p-1))*j)
      
         possible_point=np.array([possible_i,possible_j])
 
@@ -81,6 +81,6 @@ def main():
 
         return plot , possible_point,point_num
     import numpy as np
-    print(generate_point_and_plot(x_p=51 ,y_p=51 ,angle=1/6*np.pi))
+    print(generate_point_and_plot(x_p=101 ,y_p=101 ,angle=1/6*np.pi))
 if __name__=='__main__':
     main()
