@@ -66,7 +66,7 @@ def main():
                            
 
         #let's plot
-
+        possible_point=np.array([possible_i,possible_j])
         x=np.array([possible_i])
         y=np.array([possible_j])
         plot=plt.scatter(x, y,s=1)
