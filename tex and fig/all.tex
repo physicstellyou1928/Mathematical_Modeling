@@ -1,0 +1,157 @@
+%\documentclass[aps,showpacs,twocolumn,dvips,prb]{revtex4}
+\documentclass[aps,showpacs]{revtex4}
+%\documentclass[aps,showpacs,twocolumn]{revtex4} %å»æ‰dvipså¯ä»¥ç›´æ¥pdfç¼–è¯‘çœ‹åˆ°é¢œè‰²
+\usepackage{setspace}
+\usepackage{feynmp}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{cases}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{CJK}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{makecell}
+\usepackage{threeparttable}%è¡¨æ ¼ä¸‹åŠ æ³¨é‡Šæ—¶éœ€åŠ 
+
+%%%%%
+%%%%%å®šä¹‰é¢œè‰²çš„æ–°å‘½ä»¤
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+
+
+\begin{document}
+
+\begin{CJK*}{GBK}{song}
+
+\title{guyun}
+
+\date{\today}
+\begin{abstract}
+ÏÈ¿Õ×Å°É
+\end{abstract}
+
+\maketitle
+
+
+\tableofcontents{}
+
+\newpage
+\begin{spacing}{1.5}
+\section{introduction}
+\subsection{Problem Summary}
+Efficient energy storage technology is the core technology to solve the volatility and intermittency of renewable energy and waste heat resources. Phase change heat storage is widely used because of its high energy storage density and heat storage and release at a nearly  constant  temperature. Now, a company needs to design the structure of heat transfer fins in the tank of the phase change heat storage system to further improve the heat transfer performance of heat storage products.
+
+In the first question,we are required to analyse the effection that interval angle ¦È makes to the heat transfer performance. We use mathematical analysis to build a model and calculate the heat transfer ability to find the best interval angle ¦È.
+
+In the second question, we are supposed to optimize the size and distribution of triangular fins, so we contrasted many different models and chose the most suitable one.
+In the third question, we optimized the shape and distribution of the new fins and gave the final scheme.
+\subsection{Data Sourse}
+\section{Background}
+\subsection{efficient energy storage technology}
+¸ßĞ§´¢ÄÜ²ÄÁÏÊÇ¿ÉÓÃÓÚ½â¾öÓàÈÈ×ÊÔ´µÄÊ±¼ä¡¢¿Õ¼äÉÏ·Ö²¼²»¾ùµÄÒ»ÖÖºËĞÄ¼¼Êõ¡£¶øÏà±ä´¢ÈÈ¼¼ÊõÓÉÓÚÆä¼«¸ßµÄ´¢ÄÜÃÜ¶ÈºÍÄÜ¹»ÔÚºãÎÂÏÂ´¢ÈÈºÍÊÍ·Å±»¹ã·ºÀûÓÃ¡£ÆäÖĞ¹Ì¡¢ÒºÏà±ä²ÄÁÏ£¨PCM£©¾ßÓĞÇ±ÈÈ¸ß¡¢Ïà±äÇ°ºóÌå»ı±ä»»Ğ¡µÄÌØµã£¬ÕâÊ¹µÃËüÃÇÏà¶Ô¶øÑÔ¸üÈİÒ×´¢´æºÍ·â×°¡£µ«ÊÇPCM²ÄÁÏÍ¬ÑùÓĞ×ÅÆäÈ±µã£ºÆäµ¼ÈÈÏµÊıÍ¨³£½ÏĞ¡£¬Õâµ¼ÖÂËûÃÇµÄÈÈ´æ´¢ºÍÊÍ·Å¹ı³Ì½Ï³¤¡£ÎÒÃÇĞèÒªÉè¼ÆÑĞ¾¿ÓÅ»¯Ïµ½á¹¹¼°Ïà¹Ø²ÎÊı£¬Ìá¸ß´¢ÈÈÏµÍ³µÄ´«ÈÈÄÜÁ¦¡£
+
+Ä¿Ç°ÏÖÓĞµÄ½â¾ö·½°¸°üÀ¨À©´óÏà±ä²ÄÁÏºÍÈÈÔ´µÄ½Ó´¥Ãæ»ıÒà»òÕßÊÇÖ±½ÓÌá¸ßÏà±ä²ÄÁÏµÄÓĞĞ§µ¼ÈÈÏµÊı¡£µ±È»Ïà¶ÔÕâĞ©·½°¸£¬Í¨¹ı³áÆ¬À´Ôö¼Ó½Ó´¥Ãæ»ıµÄ·½Ê½ÓĞ×Å³É±¾µÍ£¬ÏŞÖÆÉÙ£¬ÌáÉıĞ§¹û´óµÄÌØµã¡£±¾ÎÄÖĞÖ÷Òª·ÖÎöµÄÔòÎª³áÆ¬Ïà¹ØµÄÄ£ĞÍ¡£
+\subsection{assumption}
+¸ù¾İÒÑÓĞÌõ¼ş¼°¼°Ïà¹ØÀíÂÛ·ÖÎö£¬ÎÒÃÇ×ö³öÈçÏÂµÄ½üËÆ¼ÙÉè£º
+
+¡¤ºöÂÔ»»ÈÈ¹ı³ÌÖĞµÄ×ÔÈ»¶ÔÁ÷Ó°Ïì
+
+¡¤¶ÔÓÚ¸ÃÎÊÌâÄ£ĞÍ£¬ÑØ¹Ş×İÏòÇé¿öÀàËÆ£¬¹Ê¼ò»¯¿¼ÂÇ¶şÎ¬Çé¿ö¡£
+
+¡¤½«´¢ÈÈ¹ŞµÄÆÊÃæÍ¼½üËÆ¿´×÷Ô²»·¡£
+
+¡¤PCM²ÄÁÏÔÚÏà±äÇ°ºóµÄÎÂ¶È¡¢Ìå»ı¾ù²»·¢Éú¸Ä±ä¡£
+
+¡¤PCM²ÄÁÏÔÚ¸÷·½ÏòÉÏÊÇ¾ùÔÈµÄ£¬¾ßÓĞÏàÍ¬µÄĞÔÖÊ¡£
+
+¡¤ÓÉÓÚÉ¢ÈÈÆ¬µÄµ¼ÈÈÏµÊıÔ¶´óÓÚPCM²ÄÁÏ£¬¹Ê¿É¼òµ¥ÈÏÎªÔÚµ¼ÈÈ¿ªÊ¼Ê±É¢ÈÈÆ¬ºÍÄÚ¾¶ÎÂ¶ÈÒ»ÖÂ¡£
+
+¡¤É¢ÈÈÆ¬ÓëÈÈÔ´µÄ½Ó´¥ÃæÕıÏàÇĞ¡£
+\section{results}
+\subsection{q1}
+
+    ¸ÃÎÊÌâÒªÇóÎªÔÚ¶şÎ¬½ØÃæÉÏ¶ÔÓÚ´¢ÈÈ¹ŞµÄ¾¶Ïò½á¹¹½øĞĞÓÅ»¯£¬ÓÅ»¯¼ä¸ô½Ç$\theta$ÊµÖÊÊÇÓÅ»¯¾ùÔÈ·Ö²¼µÄ¾ØĞÎÉ¢ÈÈÆ¬¸öÊı£¬ÒÔÆÚµÃµ½×î¶ÌµÄµ¼ÈÈ¹ı³ÌÊ±¼ä¡£
+
+    \subsubsection{model development}
+
+    \textbf{1.mean heat conduction distance}
+    
+    ÎªÁË¼ò»¯ÔËËãÁ¿£¬ÎÒÃÇ½«¶ÔÓÚÆ½¾ùµ¼ÈÈÊ±¼äµÄ×ª»¯ÎªPCM²ÄÁÏµ½ÈÈÔ´µÄÆ½¾ù¾àÀëµÄ¼ÆËã¡£
+    
+    ÎÒÃÇÒıÈëÁËÆ½¾ùÈÈ´«µİ¾àÀë$\bar{d_{h}}$£¬Æä¶¨ÒåÊ½ÓĞÈçÏÂĞÎÊ½£º
+\begin{eqnarray}
+\bar{d}_h=\mathbf{C}_h\times\frac{\sigma_{c}min\{d_r,d_f\}}{n}
+\end{eqnarray}
+ÆäÖĞ$C_h$ÎªÎÒÃÇ¶¨ÒåµÄ³£Êı£ºÈÈ´«µİÏµÊı£¬Ëü·´Ó³ÁË²»Í¬É¢ÈÈÆ¬½á¹¹ÖĞÈÈÁ÷ÌåÁ÷¶¯Ê±µÄ¶ÔÁ÷´óĞ¡£¬ C´ú±íPCM²ÄÁÏÇøÓòµÄÆ½Ãæ£¬nÎª¸ÃÆ½ÃæµÄÍø¸ñµãÊı£¬$d_{r}$ºÍ$d_f$·Ö±ğÎªPCM²ÄÁÏÖĞÃ¿¸öµãµ½ÄÚ¹ÜºÍÉ¢ÈÈÆ¬µÄ¾àÀë¡£¾İÎÄÏ×±íÃ÷£¬ÎÒÃÇ¿ÉÒÔÑ¡È¡ÆäÖĞ½ÏĞ¡µÄÒ»¸ö×÷ÎªÈÈÁ¿´«µİµÄ¾àÀë£¬½ø¶øºâÁ¿µ¼ÈÈĞÔ[ÒıÓÃ]¡£
+    
+    \textbf{2.shanxing chi pian moxing}
+    
+    »ùÓÚ1.µÄ¼ÙÉè£¬¸ù¾İ³áÆ¬¶Ô³ÆĞÔ·Ö²¼µÄÏÈ¾öÌõ¼ş£¬ÎÒÃÇ½«PCMÇøÓò¶¨Î»¿ÉĞĞÓò£¬ÎÒÃÇÍ¨¹ı¼òµ¥µÄÊÖ¶¯¼ÆËã£¬PCM²ÄÁÏµÄ´«ÈÈ²¿·ÖÖ÷ÒªÀ´Ô´ÓÚÆä¿ÉĞĞÓòÄÚ²¿·Ö¡£ÈçÏÂÍ¼1ËùÊ¾£º
+    
+    ,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\includegraphics[scale=0.60]{fig1.png}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\
+    \includegraphics[scale=0.60]{fig2.png}
+    
+    ÀûÓÃPython¶ÔÇøÓò×öÓĞÏŞÏ¸·Ö£¬½«ÇøÓò»¯ÎªÓĞÏŞÔªÍø¸ñ£¬¶ÔÓÚÃ¿¸öÍø¸ñµã¼ÆËãÆäµ½ÄÚ¹Ü¾àÀë$d_r$ºÍµ½³áÆ¬±ß½çµÄ¾àÀë$d_f$,±È½ÏÑ¡ÔñÆäÖĞ½ÏĞ¡µÄ´øÈë¼ÆËã£¬¼´1.ÖĞËùÊöÄÚÈİ¡£¶ÔÓÚ²»Í¬µÄ¼ä¸ô½Ç$\theta$£¬ÎÒÃÇ¿ÉµÃµ½ÔÚ²»Í¬µÄ¾ØĞÎ³áÆ¬¿Õ¼ä·Ö²¼ÏÂµÄÆ½¾ùÈÈ´«µ¼¾àÀë¡£½á¹ûÈçÏÂÍ¼¡¾1¡¿Ïß
+    %%%%%%%%%%%%²åÈëÍ¼Æ¬ÇúÏß
+     
+     \textbf{3.develop}
+     
+     ²»ÄÑ¿´³ö£¬ÔÚ³áÆ¬¸öÊın´óÓÚ¡¾¡¿Ê±£¬ÇúÏßÇ÷»º£¬¿ÉÖªÔÚÇøÓòÃæ»ı½ÏĞ¡Ê±£¬Ç°ÎÄ×ö³öµÄ½üËÆ¼ÙÉè²»ºã³ÉÁ¢£¬ÓÉ´ËÎÒÃÇ×ö½øÒ»²½ÓÅ»¯£¬
+\subsection{q2}
+    »ùÓÚÎÊÌâ1µÄ·ÖÎö¹ı³Ì£¬ÎÒÃÇ²ÉÓÃÀàËÆµÄ·½·¨¶ÔÇøÓò½øĞĞ¼ÆËã¡£
+\subsection{exactdata}
+\subsection{tao lun qing kuang}
+\section{about model}
+\subsection{advantage}
+Ä£ĞÍÓÅµã£º
+1.Ä£ĞÍ²ÉÓÃÍ¨¹ı¶ÔÓÚ±äÁ¿µÄ×ª±ä´Ó¶ø¸üºÃµÄ½á¾ÖÎÊÌâ£¬½«¶ÔÓÚµ¼ÈÈÊ±¼äµÄÇó½â×ª»¯Îª×÷Îª×îÔ¶µ¼ÈÈ¾àÀëµÄÇó½â£¬ºÜ´ó³Ì¶ÈÉÏ¼ò»¯ÁËËã·¨ ÓÅ»¯¼ÆËãÁ¿¡£
+
+2.¶ÔÄ£ĞÍ·Ö¿é»¯´¦Àí£¬½öĞè¸Ä±äÇøÓòÃæ»ı¼´¿É¸üºÃµØ½øĞĞÇó½â¡£
+
+3.¼ìÑéÁËÍø¸ñµãÊıÄ¿¶ÔÓÚÊµÑé½á¹ûµÄÓ°Ïì£¬Ôö¼ÓÁË×¼È·ĞÔ¡£
+
+4.»ùÓÚÎÊÌâÒ»µÄÇé¿ö£¬ÔÚ½â¾öÎÊÌâ¶şµÄ¹ı³ÌÖĞ²ÉÈ¡ÁË¿ØÖÆ±äÁ¿µÄ·½Ê½£¬¸üºÃµØ½øĞĞĞ§¹û¶Ô±È¡£
+
+5.×ÔÉè¼ÆÄ£ĞÍ²ÉÓÃÁËY×ÖĞÍÉè¼Æ£¬ºÜ´ó³Ì¶ÈÉÏÌá¸ßÁËµ¼ÈÈĞ§ÂÊ¡£
+\subsection{disadvantage}
+Ä£ĞÍÈ±µã£º
+
+1.ÔÚ´¦ÀíÄ£ĞÍÊ±¶ÔÓÚ±äÁ¿µÄ×ª»»ÎŞ·¨¾«È·¼ÆËãµ¼ÈÈËùĞèµÄÊ±¼ä£¬Ö»ÄÜ¹»¶¨ĞÔ·ÖÎöÎÊÌâ¡£
+
+2.·Ö¿é»¯´¦ÀíºöÂÔÁËÆäËû³áÆ¬¶Ô¸Ã²¿·ÖµÄÓ°Ïì£¬Ò»¶¨³Ì¶ÈÉÏÓ°ÏìÁË·ÖÎö¾«¶È¡£
+\begin{thebibliography}{10}
+
+\bibitem{Hardy2016PRB}
+L. Wang, F. Hardy, A. E. B\"{o}hmer, T. Wolf, P. Schweiss, and
+C. Meingast, Phys. Rev. B {\bf 93}, 014514 (2016).
+
+
+
+
+\end{thebibliography}
+
+
+\appendix
+
+\section{Related notes}
+
+
+
+
+
+\end{spacing}
+\end{CJK*}
+
+\end{document} 
