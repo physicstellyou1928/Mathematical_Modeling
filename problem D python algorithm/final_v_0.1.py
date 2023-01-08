@@ -170,8 +170,8 @@ for i in range(4,28):
 x=list(range(4,28))
 
 
-plt.scatter(x,y,label='1')
-plt.plot(x,y)
+plt.scatter(x,y)
+plt.plot(x,y,label='1')
 plt.ylabel('SUM_revison')
 plt.xlabel('fin_num')
 plt.ylim(0,25)
