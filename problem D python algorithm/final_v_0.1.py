@@ -1,3 +1,5 @@
+
+
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan  8 04:30:37 2023
@@ -178,7 +180,7 @@ plt.ylim(0,25)
 #注：此处可以明显看出当叶片的数量在大于20之后，叶片变化就不是很明显了
 
 ##############################################################################################################
-#下面我们试试添加一个片数影响函数，f(x)=1+0.05*x
+#下面我们试试添加一个片数影响函数，f(x)=1+0.02*x
 y=[]
 for i in range(4,28):
     y.append(fin_num(i,101,101)[1]*(1+0.02*i))
@@ -195,7 +197,7 @@ plt.ylim(0,25)
 
 #注：此处我们看到变化的趋势在n=15左右趋于平缓
 #############################################################################################################
-#下面我们试着添加一个更合理一点的影响函数，考虑散热片面积占整个环面的比例p（p正比与片数n），定义损失函数f(x)=1/(1-x)
+#下面我们试着添加一个更合理一点的影响函数，考虑散热片面积占整个环面的比例（正比与片数n），定义损失函数f(x)=1/(1-x)
 y=[]
 for i in range(4,28):
     y.append(fin_num(i,101,101)[1]*(1/(1-0.02*i)))
@@ -203,7 +205,7 @@ for i in range(4,28):
 
 x=list(range(4,28))
 
-
+print(y)
 plt.scatter(x,y)
 plt.plot(x,y,label='3')
 plt.ylabel('SUM_revison')
@@ -253,12 +255,16 @@ def d_min(point:np.array):
 
 
     return min(d_1,d_3)
+########################################################################
+
+          for i in range(cols):
+              if not possible_point[0,i]-2*possible_point[1,i]+5>3 :
+          # remove the point in if from the x,y of the possible point
+                             possible_i.append(possible_point[0,i])
+                             possible_j.append(possible_point[1,i])
+                             
+
 '''
-
-
-
-
-
 
 
 
