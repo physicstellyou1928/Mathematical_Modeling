@@ -143,9 +143,9 @@ def d_min(point:np.array):
 
 
 def fin_num(n,x_p,y_p):
-    possible_points=generate_point_and_plot(x_p, y_p, (2/n)*np.pi)[1]
+    possible_points=generate_point_and_plot(x_p, y_p, (1/n)*np.pi)[1]
     #此处的[1] 很重要不能忽略
-    point_num=generate_point_and_plot(x_p, y_p, (2/n)*np.pi)[0]
+    point_num=generate_point_and_plot(x_p, y_p, (1/n)*np.pi)[0]
 
     #possible_points[:,i] 就是第i个点的坐标
 
