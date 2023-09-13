@@ -19,7 +19,7 @@ Created on Sat Jan  7 20:52:27 2023
 
 ##################################################################################################
 #找出所有可能的点
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 import math
 import numpy as np
 def generate_point_and_plot(x_p ,y_p ,angle):
